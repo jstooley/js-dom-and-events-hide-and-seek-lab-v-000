@@ -10,9 +10,6 @@ function increaseRankBy(n){
     selected[i].innerHTML = parseInt(selected[i].innerHTMl) + n;
   }
 }
-function increaseRankBy(n) {
-  var nodes = document.querySelectorAll('.ranked-list li');
-  for(var i = 0; i < nodes.length; i++) {
-    nodes[i].innerHTML = parseInt(nodes[i].innerHTML) + n;
-  }
+function deepestChild(){
+  
 }
