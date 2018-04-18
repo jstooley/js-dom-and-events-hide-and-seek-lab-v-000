@@ -6,10 +6,18 @@ function nestedTarget(){
 }
 
 function increaseRankBy(n){
-  let node = document.querySelectorAll('.ranked-list li');
+  let lis = document.querySelectorAll('.ranked-list li');
   for (let i = 0; i < node.length ; i++ ){
-    node[i].innerHTML = parseInt(node[i].innerHTMl) + n;
+    lis[i].innerHTML = parseInt(lis[i].innerHTMl) + n;
   }
+}
+
+function increaseRankBy(n) {
+    let rankedLis = document.querySelectorAll('ul.ranked-list li')
+    for (let i = 0; i < rankedLis.length ; i++) {
+        let addN = parseInt(rankedLis[i].textContent) + n;
+        rankedLis[i].textContent = addN.toString()
+    }
 }
 
 function deepestChild() {
