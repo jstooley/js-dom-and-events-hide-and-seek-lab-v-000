@@ -12,14 +12,6 @@ function increaseRankBy(n){
   }
 }
 
-function increaseRankBy(n) {
-    let rankedLis = document.querySelectorAll('ul.ranked-list li')
-    for (let i = 0; i < rankedLis.length ; i++) {
-        let addN = parseInt(rankedLis[i].textContent) + n;
-        rankedLis[i].textContent = addN.toString()
-    }
-}
-
 function deepestChild() {
   let node = document.getElementById('grand-node')
   let nextNode = node.children[0]
