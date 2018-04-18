@@ -5,11 +5,11 @@ function nestedTarget(){
   return document.querySelector('#nested .target')
 }
 
-function increaseRankBy(n){
-  let lis = document.querySelectorAll('ul.ranked-list li');
-  for (let i = 0; i < lis.length ; i++ ){
-    lis[i].innerHTML = (parseInt(lis[i].innerHTMl) + n).toString();
-  }
+function increaseRankBy(n) {
+  let nodes = document.querySelectorAll('.ranked-list');
+  nodes.forEach(function(node) {
+    e.innerHTML = parseInt(nodee.innerHTML) + n
+  })
 }
 
 function deepestChild() {
