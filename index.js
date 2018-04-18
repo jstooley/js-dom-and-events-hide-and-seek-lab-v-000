@@ -6,5 +6,7 @@ function nestedTarget(){
 }
 function increasingRankBy(n){
   let selected = document.querySelectorAll(n)
-  for
+  for (i = 0; i < selected.length ; i++ ){
+    
+  }
 }
